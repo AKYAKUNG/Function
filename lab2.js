@@ -8,8 +8,8 @@ function calculateRoomArea(width, length) {
 
 // ขั้นตอนการทำงานหลัก (Logic Flow)
 // 1. รับค่าจากคีย์บอร์ด
-const inputWidth = readline.question("Enter room width (m): ");
-const inputLength = readline.question("Enter room length (m): ");
+const inputWidth = readline.question("ความกว้าง (เมตร): ");
+const inputLength = readline.question("ความยาว (เมตร): ");
 
 // 2. แปลงชนิดข้อมูลจาก String เป็น Number ด้วย parseFloat()
 const width = parseFloat(inputWidth);
@@ -17,4 +17,4 @@ const length = parseFloat(inputLength);
 
 // 3. เรียกใช้งานฟังก์ชันเพื่อคำนวณ และแสดงผลลัพธ์
 const area = calculateRoomArea(width, length);
-console.log(`Calculated Room Area: ${area} sq.m.`);
+console.log(`พื้นที่ห้องทั้งหมด: ${area} ตารางเมตร`);

@@ -8,11 +8,12 @@ function showReceiptHeader(storeName) {
     
     // พิมพ์หัวข้อใบเสร็จออกทางหน้าจอพร้อมเส้นคั่นให้สวยงาม
     console.log("========================================");
-    console.log(`              ${upperStoreName}              `);
+    console.log(`             WELCOME TO ${upperStoreName}              `);
+    console.log(`             TAX INVOICE / RECEIPT              `);
     console.log("========================================");
     // ไม่มี return ค่ากลับมาตามเงื่อนไขโจทย์
 }
-const inputName = readline.question("Enter Store Name: ");
+const inputName = readline.question("ใส่ชื่อร้านค้า: ");
 
 // 2. ส่งชื่อร้านค้าเข้าฟังก์ชัน showReceiptHeader()
 showReceiptHeader(inputName);
